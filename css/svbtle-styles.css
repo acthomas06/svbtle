@@ -50,6 +50,15 @@ article h2 {
 	margin: 0 auto;
 }
 
+article blockquote {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 550px;
+}
+
 ul#navigator {
 	position: relative;
 	display: block;
@@ -82,6 +91,10 @@ a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 
+section#primary, section#secondary {
+	position: relative;
+}
+
 section#primary.home {
 	width: 70%;
 }
@@ -95,6 +108,24 @@ section#primary {
 	float: left;
 }
 
+section#secondary {
+	border: 0 solid blue;
+	display: block;
+	float: left;
+}
+
+section#primary article blockquote {
+	border-color: #88ACDB;
+}
+
+section#secondary div.breathe {
+	padding-right: 50px;
+}
+
+section#secondary h1.title {
+	color: #acacac;
+	font-weight: 100;
+}
 
 section#primary h1.title {
 	font-family: 'freight-sans-pro';
@@ -112,10 +143,28 @@ section#primary h1.title span {
 	font-family: 'freight-sans-pro';
 }
 
+section#secondary h1.title section#primary h1.title {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 600;
+	color: #000;
+	padding-left: 30px;
+	padding-top: 36px;
+	padding-right: 15px;
+	padding-bottom: 34px;
+
+}
+h1.title {
+	padding-top: 30px;
+}
+
 aside#navbar {
-	position: relative;
+	position: fixed;
 	background-color: #fff;
 	border-right: 1px solid #eee;
+	left: 0;
+	top: 0;
+	bottom: 0;
 	width: 125px;
 	z-index: 99;
 }
